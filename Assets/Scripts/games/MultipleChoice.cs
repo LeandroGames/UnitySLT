@@ -10,18 +10,18 @@ public class MultipleChoice : MonoBehaviour {
 	public Text txtWin;
 	public Animator Anim;
 	private BonusBase BB;
-	private BonusChoice BC;
+	private BonusSettings BC;
 
 
 	public void onClick() {
 		BB = BonusBase.Instance;
-		BC = BB.Choices[BB.currentIndex].GetComponent<BonusChoice>();
+		BC = BB.Settings[BB.currentIndex].GetComponent<BonusSettings>();
 		GetComponent<Button> ().interactable = false;
 
-		if (BB.Choices[BB.currentIndex].GetComponent<BonusChoice>().selection >= BC.pt) {
+		if (BB.Settings[BB.currentIndex].GetComponent<BonusSettings>().selection >= BC.pt) {
 			Anim.SetBool ("selected", true);
 			Anim.SetBool ("fall", true);
-			Button[] buttons = BB.Choices [BB.currentIndex].GetComponent<BonusChoice> ().buttons;
+			Button[] buttons = BB.Settings [BB.currentIndex].GetComponent<BonusSettings> ().buttons;
 			foreach (Button bt in buttons) {
 				bt.GetComponent<Button>(). interactable = false;
 			}
@@ -50,7 +50,7 @@ public class MultipleChoice : MonoBehaviour {
 
 	public void Reset() {
 		BB = BonusBase.Instance;
-		Button[] buttons = BB.Choices [BB.currentIndex].GetComponent<BonusChoice> ().buttons;
+		Button[] buttons = BB.Settings [BB.currentIndex].GetComponent<BonusSettings> ().buttons;
 		foreach (Button bt in buttons) {
 			bt.interactable = true;
 			bt.gameObject.GetComponent<MultipleChoice>().txtWin.gameObject.SetActive (false);

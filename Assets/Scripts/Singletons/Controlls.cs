@@ -78,7 +78,7 @@ public class Controlls : GenericSingleton<Controlls> {
 			if (Globals.IsBonus) {
 				Globals.Gain = 0;
 				Globals.prizesRaffled.Clear ();
-				BonusBase.Instance.Choices[BonusBase.Instance.currentIndex].GetComponent<BonusChoice>().EndBonus ();
+				BonusBase.Instance.Settings[BonusBase.Instance.currentIndex].GetComponent<BonusSettings>().EndBonus ();
 				Globals.IsBonus = false;
 			}
 			Globals._Demo.TurnOffDemo ();
@@ -162,7 +162,7 @@ public class Controlls : GenericSingleton<Controlls> {
 	{
 		Globals.autoPlay = !Globals.autoPlay;
 		if (Globals.IsBonus) {
-			BonusBase.Instance.Choices [BonusBase.Instance.currentIndex].GetComponent<BonusChoice> ().CallAutoPlayDelay ();
+			BonusBase.Instance.Settings [BonusBase.Instance.currentIndex].GetComponent<BonusSettings> ().CallAutoPlayDelay ();
 		}
 	}
 			

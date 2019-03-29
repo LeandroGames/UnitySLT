@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Roulette : MonoBehaviour {
 
-	private BonusChoice BC;
+	private BonusSettings BC;
 	private BonusBase BB;
 	private float[] fracs;
 	private int objective = 0;
@@ -33,12 +33,13 @@ public class Roulette : MonoBehaviour {
 
 	public void initRoulette() {
 		BB = BonusBase.Instance;
-		BC = BB.Choices [BB.currentIndex].GetComponent<BonusChoice> ();
+		BC = BB.Settings [BB.currentIndex].GetComponent<BonusSettings> ();
 		fracs = rouletteFractions;
 		objective = BC.selection;
 		current = 0;
 		initialAngle = transform.localRotation.eulerAngles;
 		startRoll ();
+		Debug.Log(" objective "+objective);
 	}
 
 	public void startRoll() {
@@ -60,15 +61,16 @@ public class Roulette : MonoBehaviour {
 			}
 		}
 			
-		if (count > loops+1 && current == objective)
-			inRoll = false;
+
 		if (inRoll) {
 			if (count > loops)
 				StartCoroutine (WaitAndExecute (initSpeed*4, roll));
 			else
 				StartCoroutine (WaitAndExecute (initSpeed, roll));
 		}
-		
+
+		if (count > loops+1 && current == objective)
+			inRoll = false;
 	}
 
 

@@ -15,8 +15,8 @@ public class OnSelectionUnique : MonoBehaviour {
 		toOff.SetActive (false);
 		thisButton.enabled = false;
 		BonusBase BB = BonusBase.Instance;
-		BB.Choices [BB.currentIndex].GetComponent<BonusChoice>().WinText.text = BB.BonusValue.ToString();
-		BB.Choices [BB.currentIndex].GetComponent<BonusChoice>(). finishBonus ();
+		BB.Settings [BB.currentIndex].GetComponent<BonusSettings>().WinText.text = BB.BonusValue.ToString();
+		BB.Settings [BB.currentIndex].GetComponent<BonusSettings>(). finishBonus ();
 	}
 
 	public void CallOn() {

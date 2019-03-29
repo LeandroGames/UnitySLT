@@ -13,7 +13,7 @@ public class UniqueChoice : MonoBehaviour {
 		BonusBase BB = BonusBase.Instance;
 		text.gameObject.SetActive (true);
 		text.text = value.ToString ();
-		BB.Choices[BB.currentIndex].GetComponent<BonusChoice>().selection = selectionIndex;
+		BB.Settings[BB.currentIndex].GetComponent<BonusSettings>().selection = selectionIndex;
 	}
 
 	public void revel(int value) {

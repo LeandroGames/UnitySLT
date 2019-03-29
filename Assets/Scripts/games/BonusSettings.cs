@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class BonusChoice : MonoBehaviour {
+public class BonusSettings : MonoBehaviour {
 
 	public Text WinText;
 	public Button[] buttons;

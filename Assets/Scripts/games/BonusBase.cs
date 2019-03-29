@@ -23,7 +23,7 @@ public class BonusBase : GenericSingleton<BonusBase> {
 
 	public UnityEvent[] CallOnStart; 
 	public UnityEvent[] CallOnFinish; 
-	public GameObject[] Choices;
+	public GameObject[] Settings;
 
 	public void InitBonus(int index, float bnsVl) {
 		bonusIndex = index;
@@ -35,11 +35,11 @@ public class BonusBase : GenericSingleton<BonusBase> {
 	public void OnStart() {
 		Debug.Log ("Start Bonus " + bonusIndex);
 		CallOnStart [bonusIndex].Invoke ();
-		Choices [bonusIndex].GetComponent<BonusChoice> ().Init ();
+		Settings [bonusIndex].GetComponent<BonusSettings> ().Init ();
 	}
 
 	public void AutoPlay() {
-		Choices [bonusIndex].GetComponent<BonusChoice> ().CallAutoPlayDelay ();
+		Settings [bonusIndex].GetComponent<BonusSettings> ().CallAutoPlayDelay ();
 	}
 		
 
