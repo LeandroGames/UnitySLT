@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5b9cbf65c72f95a44b863218c6563a95
+timeCreated: 1493870779
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Renegade Master
+  fontNames:
+  - Renegade Master
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 15b96265e4d0daf4eb5798da9641712f
+timeCreated: 1493870779
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Renegade Mistress
+  fontNames:
+  - Renegade Mistress
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: a3e41ca3eb8fd56468fa0619d7d78273
+timeCreated: 1494982221
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fireborder_0
+    21300002: fireborder_1
+    21300004: fireborder_2
+    21300006: fireborder_3
+    21300008: fireborder_4
+    21300010: fireborder_5
+    21300012: fireborder_6
+    21300014: fireborder_7
+    21300016: fireborder_8
+    21300018: fireborder_9
+    21300020: fireborder_10
+    21300022: fireborder_11
+    21300024: fireborder_12
+    21300026: fireborder_13
+    21300028: fireborder_14
+    21300030: fireborder_15
+    21300032: fireborder_16
+    21300034: fireborder_17
+    21300036: fireborder_18
+    21300038: fireborder_19
+    21300040: fireborder_20
+    21300042: fireborder_21
+    21300044: fireborder_22
+    21300046: fireborder_23
+    21300048: fireborder_24
+    21300050: fireborder_25
+    21300052: fireborder_26
+    21300054: fireborder_27
+    21300056: fireborder_28
+    21300058: fireborder_29
+    21300060: fireborder_30
+    21300062: fireborder_31
+    21300064: fireborder_32
+    21300066: fireborder_33
+    21300068: fireborder_34
+    21300070: fireborder_35
+    21300072: fireborder_36
+    21300074: fireborder_37
+    21300076: fireborder_38
+    21300078: fireborder_39
+    21300080: fireborder_40
+    21300082: fireborder_41
+    21300084: fireborder_42
+    21300086: fireborder_43
+    21300088: fireborder_44
+    21300090: fireborder_45
+    21300092: fireborder_46
+    21300094: fireborder_47
+    21300096: fireborder_48
+    21300098: fireborder_49
+    21300100: fireborder_50
+    21300102: fireborder_51
+    21300104: fireborder_52
+    21300106: fireborder_53
+    21300108: fireborder_54
+    21300110: fireborder_55
+    21300112: fireborder_56
+    21300114: fireborder_57
+    21300116: fireborder_58
+    21300118: fireborder_59
+    21300120: fireborder_60
+    21300122: fireborder_61
+    21300124: fireborder_62
+    21300126: fireborder_63
+    21300128: fireborder_64
+    21300130: fireborder_65
+    21300132: fireborder_66
+    21300134: fireborder_67
+    21300136: fireborder_68
+    21300138: fireborder_69
+    21300140: fireborder_70
+    21300142: fireborder_71
+    21300144: fireborder_72
+    21300146: fireborder_73
+    21300148: fireborder_74
+    21300150: fireborder_75
+    21300152: fireborder_76
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fireborder_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_1
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_2
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_3
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_4
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_5
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_6
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 2450
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_9
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_10
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_11
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_12
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_13
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 2205
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_15
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_16
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_17
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_18
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_19
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_20
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1960
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_22
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_23
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_24
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_25
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_26
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_27
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1715
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_30
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_31
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_32
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_33
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_34
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1470
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_36
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_37
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_38
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_39
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_40
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_41
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 1225
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_43
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_44
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_45
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_46
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_47
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_48
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 980
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_50
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_51
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_52
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_53
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_54
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_55
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 735
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_57
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_58
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_59
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_60
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_61
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_62
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 490
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_64
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_65
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_66
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_67
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_68
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_69
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 245
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_71
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_72
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_73
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_74
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_75
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: fireborder_76
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 0
+        width: 345
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

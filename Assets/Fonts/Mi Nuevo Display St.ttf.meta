@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 680d393c33d09a944b82fe8294d01342
+timeCreated: 1493871167
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mi Nuevo Display St
+  fontNames:
+  - Mi Nuevo Display St
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

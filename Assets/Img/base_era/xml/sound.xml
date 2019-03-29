@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<!--ERA DO GELO , 15/01/07,16:02-->
+<!--ERA DO GELO-->
+<!--ERA DO GELO-->
+<!--ERA DO GELO-->
+<!--ERA DO GELO-->
+<!--ERA DO GELO-->
+<soundmap>
+<volume_min>10</volume_min>
+<volume_max>160</volume_max>
+        <sound name="abertura" tipo="cache" grupo="eventos">
+                <file>sons/abertura.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="autojogo" tipo="cache" grupo="eventos">
+                <file>sons/autojogo.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="acumulado" tipo="cache">
+                <file>sons/acumulado.ogg</file>
+                <volume>-1</volume>
+        </sound>
+        <sound name="aposta" tipo="cache" grupo="eventos">
+                <file>sons/aposta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="aposta_mais" tipo="cache" grupo="eventos">
+                <file>sons/aposta_mais.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="aposta_menos" tipo="cache" grupo="eventos">
+                <file>sons/aposta_menos.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="muda_credito" tipo="cache" grupo="eventos">
+                <file>sons/muda_credito.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="aposta_total" tipo="cache" grupo="eventos">
+                <file>sons/aposta_total.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="cobrar" tipo="cache" grupo="eventos">
+                <file>sons/cobrar.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="creditando" tipo="cache" grupo="eventos">
+                <file>sons/creditando.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="jogada" tipo="cache" grupo="eventos">
+                <file>sons/jogada.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="linha_mais" tipo="cache" grupo="eventos">
+                <file>sons/linha_mais.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="linha_max" tipo="cache" grupo="eventos">
+                <file>sons/linha_max.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="linha_menos" tipo="cache" grupo="eventos">
+                <file>sons/linha_menos.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pagamento" tipo="cache" grupo="eventos">
+                <file>sons/pagamento.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou0" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho1.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou1" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho2.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou2" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho3.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou3" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho4.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou4" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho5.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou5" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho6.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou6" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho7.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="ganhou7" tipo="cache" grupo="premios_rod">
+                <file>sons/premio_rodilho8.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="rodilho" tipo="cache" grupo="rodilho_giro">
+                <file>sons/rodilho_girando.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="rodilho_parada" tipo="cache" grupo="eventos">
+                <file>sons/rodilho_parada.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="paradarodilhos1" tipo="cache" grupo="eventos">
+                <file>sons/rodilho_parada1.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total" tipo="cache" grupo="valor_total">
+                <file>sons/valor_total.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <!--PREMIOS_VALOR_TOTAL-->
+        <!--PREMIOS_VALOR_TOTAL-->
+        <!--PREMIOS_VALOR_TOTAL-->
+        <!--PREMIOS_VALOR_TOTAL-->
+        <!--PREMIOS_VALOR_TOTAL-->
+        <sound name="valor_total_1" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_1.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total_2" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_2.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total_3" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_3.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total_4" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_4.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total_5" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_5.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total_6" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_6.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="valor_total_7" tipo="cache" grupo="valor_total">
+                <file>sons/premios_valor_total/valor_total_7.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <!--BONUS_I-->
+        <sound name="bonus1_entrada" tipo="cache" grupo="entrada_bonusI">
+                <file>sons/bonus_I/entrada.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_abre_geladeira" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/abre_geladeira.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_fundo" tipo="cache" grupo="fundo_bonusI">
+                <file>sons/bonus_I/fundo.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_seleciona_pinguim" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/seleciona_pinguim.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_ganhou_1x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_I/ganhou_1x.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_ganhou_2x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_I/ganhou_2x.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_ganhou_5x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_I/ganhou_5x.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_ganhou_10x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_I/ganhou_10x.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_ganhou_20x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_I/ganhou_20x.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_ganhou_50x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_I/ganhou_50x.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus1_tira_papel" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/tira_papel.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pinguim_bailarina" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/ani_pinguim_bailarina.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pinguim_bunda" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/ani_pinguim_bunda.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pinguim_caixa" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/ani_pinguim_caixa.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pinguim_chapeu" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/ani_pinguim_chapeu.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pinguim_bailarina" tipo="cache" grupo="eventos">
+                <file>sons/bonus_I/ani_pinguim_bailarina.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <!--BONUS_II-->
+        <!--BONUS_II-->
+        <!--BONUS_II-->
+        <!--BONUS_II-->
+        <!--BONUS_II-->
+        <!--BONUS_II-->
+        <sound name="cesta_pinguim" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/cesta_pinguim.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="erro_cesta" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/erro_cesta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="fundo_bonusII" tipo="cache" grupo="fundo_bonusII">
+                <file>sons/bonus_II/erro_cesta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pula_urso" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/pula_urso.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="pulo_pinguim" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/pulo_pinguim.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="saida_ganhou" tipo="cache" grupo="ganho_bonusII">
+                <file>sons/bonus_II/saida_ganhou.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="saida_perdeu" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/saida_perdeu.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="salto_pinguim" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/salto_pinguim.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus_II_fundo" tipo="cache" grupo="fundo_bonusII">
+                <file>sons/bonus_II/fundo_bonusII.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus_II_premio_1x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_II/acertou_cesta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus_II_premio_2x" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_II/acertou_cesta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus_II_premio_med" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_II/acertou_cesta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="bonus_II_premio_med2" tipo="cache" grupo="premios_bonusI">
+                <file>sons/bonus_II/acertou_cesta.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="despertador" tipo="cache" grupo="eventos">
+                <file>sons/bonus_II/despertador.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <!--JOGADA GRATIS-->
+        <!--JOGADA GRATIS-->
+        <!--JOGADA GRATIS-->
+        <!--JOGADA GRATIS-->
+        <!--JOGADA GRATIS-->
+        <!--JOGADA GRATIS-->
+        <sound name="entrada_gratis" tipo="cache" grupo="_entrada_gratis">
+                <file>sons/jogada_gratis/entrada_gratis.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="fundo_jogada_gratis" tipo="cache" grupo="fundo_gratis">
+                <file>sons/jogada_gratis/fundo_jogada_gratis.ogg</file>
+                <volume>60</volume>
+        </sound>
+        <sound name="saida_jogada_gratis" tipo="cache" grupo="eventos">
+                <file>sons/jogada_gratis/saida_gratis.ogg</file>
+                <volume>60</volume>
+        </sound>
+</soundmap>
