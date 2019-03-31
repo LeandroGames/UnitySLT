@@ -45,14 +45,18 @@ public class Jackpot : GenericSingleton<Jackpot> {
 		PayWindow.SetActive (true);
 	}
 
+	void closeWindow() {
+		PayWindow.SetActive (false);
+	}
 
 	void returnGame() {
 		Globals.IsJackpot = false;
-		PayWindow.SetActive (false);
 		if (!Globals.DemoMode) {
 			int tmp = (int)(jackpot_current * Globals.CreditValue);
 			Globals.Gain = (float)tmp;
-		}
+			StartCoroutine (WaitAndExecute (10f, closeWindow));
+		} else
+			StartCoroutine (WaitAndExecute (3f, closeWindow));
 		Slots.Instance._stage = Globals.CHECKPRIZE;
 		Jackpot.Instance.resetJackpot ();
 	}

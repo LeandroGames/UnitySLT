@@ -98,7 +98,8 @@ public class Controlls : GenericSingleton<Controlls> {
 		if (Slots.Instance.Stage == Globals.FREETOPLAY && Globals.Credit >= Globals.inLine * Globals.Bet) {
 			Globals._SoundCtrl.clearQueue ();
 			Globals._SoundCtrl.PlaySoundName ("rolling", false, Globals._SoundCtrl._SlotsSound);
-		}
+		} 
+
 		Slots.Instance.Sortition ();
 	}
 

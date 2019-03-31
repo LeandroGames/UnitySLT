@@ -87,17 +87,6 @@ public class SoundControll : GenericSingleton<SoundControll> {
 	 */
 	public void PlayPrizeSound(int iconIndex, string code = "") {
 		//Debug.Log("CODE: "+ iconIndex + "." + code);
-		if (subPrizeSounds.ContainsKey (iconIndex + "." + code)) {
-			if (AudioSrc.clip != subPrizeSounds [iconIndex + "." + code]) {
-				if (AudioSrc.isPlaying) {
-					if (!Queue.Contains (subPrizeSounds [iconIndex + "." + code]) && !Globals.DemoMode)
-						Queue.Add (subPrizeSounds [iconIndex + "." + code]);
-				} else
-					AudioSrc.clip = subPrizeSounds [iconIndex + "." + code];
-			}
-			if (!AudioSrc.isPlaying)
-				AudioSrc.Play ();
-		} else
 		if (PrizeSounds.ContainsKey (iconIndex) && !subPrizeSounds.ContainsKey (iconIndex + "." + code)) {
 			if (AudioSrc.clip != PrizeSounds [iconIndex]) {
 				if (AudioSrc.isPlaying) {
@@ -109,6 +98,19 @@ public class SoundControll : GenericSingleton<SoundControll> {
 			if (!AudioSrc.isPlaying)
 				AudioSrc.Play ();
 		} 
+		else 
+		if (subPrizeSounds.ContainsKey (iconIndex + "." + code)) {
+			if (AudioSrc.clip != subPrizeSounds [iconIndex + "." + code]) {
+				if (AudioSrc.isPlaying) {
+					if (!Queue.Contains (subPrizeSounds [iconIndex + "." + code]) && !Globals.DemoMode)
+						Queue.Add (subPrizeSounds [iconIndex + "." + code]);
+				} else
+					AudioSrc.clip = subPrizeSounds [iconIndex + "." + code];
+			}
+			if (!AudioSrc.isPlaying)
+				AudioSrc.Play ();
+		} 
+
 	}
 
 
