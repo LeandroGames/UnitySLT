@@ -9,6 +9,10 @@ public class setJackpotText : MonoBehaviour {
 	void Awake () {
 		GetComponent<Text> ().text = Jackpot.Instance.MonetaryString( Jackpot.Instance.jackpot_current);
 	}
+
+	void OnEnable () {
+		GetComponent<Text> ().text = Jackpot.Instance.MonetaryString( Jackpot.Instance.jackpot_current);
+	}
 	
 
 }

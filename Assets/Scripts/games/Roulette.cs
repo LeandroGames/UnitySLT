@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Roulette : MonoBehaviour {
 
@@ -14,21 +15,28 @@ public class Roulette : MonoBehaviour {
 	private Vector3 initialAngle;
 	private int count = 0;
 
-	public int loops = 10;
+	public int loops = 3;
 	public int parts = 24;
-	public float limit = 345f;
+
 	public float partValue = 15f;
-	public float initSpeed = 0.5f;
+	public float initSpeed = 0.02f;
 	public Animator Arrow;
+	public Button buttonStart;
 
 	private float[] rouletteFractions = new float[24];
 
 	void Start() {
+		Arrow.SetBool ("move", false);
 		float a = 0;
 		for(int f = 0; f < rouletteFractions.Length; f++) {
 			rouletteFractions[f] = a;
 			a += partValue;
 		}
+
+		if(!Globals.DemoMode)
+			buttonStart.enabled = true;
+		else 
+			buttonStart.enabled = false;
 	}
 
 	public void initRoulette() {
@@ -39,19 +47,17 @@ public class Roulette : MonoBehaviour {
 		current = 0;
 		initialAngle = transform.localRotation.eulerAngles;
 		startRoll ();
-		Debug.Log(" objective "+objective);
 	}
 
 	public void startRoll() {
+		objective = BC.selection;
 		roll ();
 		inRoll = true;
 	}
 
 	void roll() {
-		Debug.Log ("current: " + current);
-		initialAngle.z = rouletteFractions [current];
-		gameObject.transform.localRotation = Quaternion.Euler(initialAngle);
-		if(current > 0)
+		Vector3 tmp = new Vector3 (initialAngle.x, initialAngle.y, rouletteFractions [current]);
+		gameObject.transform.localRotation = Quaternion.Euler(tmp);
 			Arrow.SetBool ("move", true);
 		if (inRoll) {
 			current++;
@@ -69,10 +75,20 @@ public class Roulette : MonoBehaviour {
 				StartCoroutine (WaitAndExecute (initSpeed, roll));
 		}
 
-		if (count > loops+1 && current == objective)
+		if (count > loops + 1 && current == objective) {
 			inRoll = false;
+			BC.finishBonus ();
+			count = 0;
+			Arrow.SetBool ("move", false);
+		}
 	}
 
+	public void reset() {
+		gameObject.transform.localRotation = Quaternion.Euler(initialAngle);
+		inRoll = false;
+		count = 0;
+		Arrow.SetBool ("move", false);
+	}
 
 
 	private IEnumerator WaitAndExecute(float waitTime, UnityAction task)

@@ -20,7 +20,7 @@ public class BonusSettings : MonoBehaviour {
 	[HideInInspector]
 	public BonusBase BB;
 
-	private float[] bonusFractions = new float[3];
+	private float[] bonusFractions = new float[4];
 	public float[] fractions { get { return bonusFractions; } }
 
 
@@ -34,6 +34,7 @@ public class BonusSettings : MonoBehaviour {
 			initMultipleChoice ();
 		} else if (BonusBase.Instance.currentIndex == 2) {
 			initRoulette ();
+			WinText.gameObject.SetActive (true);
 		}
 
 		if (Globals.DemoMode) {
@@ -45,7 +46,8 @@ public class BonusSettings : MonoBehaviour {
 
 	void initRoulette() {
 		selection = Random.Range (0, 23);
-		WinText.text = ((int)Globals.Gain).ToString();
+		Globals.Gain = BB.BonusValue;
+		WinText.text = ((int)Globals.Gain / (selection+1)).ToString ();
 		buttons [0].gameObject.GetComponent<Roulette> ().initRoulette ();
 	}
 
@@ -56,28 +58,35 @@ public class BonusSettings : MonoBehaviour {
 			bonusFractions [0] = BB.BonusValue / Random.Range (2, 4);
 			bonusFractions [1] = BB.BonusValue  / Random.Range (4, 8);
 			bonusFractions [2] = BB.BonusValue  - Random.Range (10, BB.BonusValue -10);
+			bonusFractions [3] = BB.BonusValue  - Random.Range (10, BB.BonusValue -10);
 			break;
 
 		case 1:
 			bonusFractions [0] = BB.BonusValue  * Random.Range (2, 4);
 			bonusFractions [1] = BB.BonusValue  * Random.Range (4, 8);
 			bonusFractions [2] = BB.BonusValue  + Random.Range (10, BB.BonusValue *10);
+			bonusFractions [3] = BB.BonusValue  + Random.Range (50, BB.BonusValue *5);
 			break;
 
 		case 2:
 			bonusFractions [0] = BB.BonusValue * Random.Range (1, 3);
 			bonusFractions [1] = BB.BonusValue * Random.Range (3, 6);
 			bonusFractions [2] = BB.BonusValue  - Random.Range (10, BB.BonusValue -10);
+			bonusFractions [3] = BB.BonusValue  + Random.Range (10, BB.BonusValue -10);
 			break;
 
 		case 3:
 			bonusFractions [0] = BB.BonusValue  / Random.Range (2, 3);
 			bonusFractions [1] = BB.BonusValue  / Random.Range (3, 6);
 			bonusFractions [2] = BB.BonusValue  + Random.Range (10, BB.BonusValue *10);
+			bonusFractions [2] = BB.BonusValue  - Random.Range (10, BB.BonusValue *10);
 			break;
 		}
-			
 		Globals.Gain = BB.BonusValue;
+		if(Globals.DemoMode)
+		for (int i = 0; i < buttons.Length; i++) {
+			buttons [i].enabled = false;
+		}
 	}
 
 	void initMultipleChoice () {
@@ -117,7 +126,12 @@ public class BonusSettings : MonoBehaviour {
 		foreach (float f in fc)
 			vsum += f;
 		Globals.Gain = vsum;
+		if(Globals.DemoMode)
+		for (int k = 0; k < buttons.Length; k++) {
+			buttons [k].enabled = false;
+		}
 	}
+
 
 	public void finishBonus() {
 		if (BB.currentIndex == 0) 
@@ -125,10 +139,17 @@ public class BonusSettings : MonoBehaviour {
 		 else 
 			if (BB.currentIndex == 1) 
 				StartCoroutine (WaitAndExecute (1f, invokeFinishMultiple));
+			else 
+				if (BB.currentIndex == 2) 
+					StartCoroutine (WaitAndExecute (1f, InvokeFinishRoulette));
 		
 	}
 
-
+	void InvokeFinishRoulette() {
+		WinText.text = string.Concat((selection+1).ToString()," X ", ((int)Globals.Gain/(selection+1)).ToString(),"\n = \n",((int)Globals.Gain).ToString());
+		ReturnToGame.Invoke ();
+		StartCoroutine (WaitAndExecute (3f, EndBonus));
+	}
 
 	void InvokeFinishUnique() {
 		WinText.gameObject.SetActive (true);
@@ -161,6 +182,8 @@ public class BonusSettings : MonoBehaviour {
 			UniqueReturnToGame ();
 		} else if (BB.currentIndex == 1) {
 			MultipleReturnToGame ();
+		} else if (BB.currentIndex == 2) {
+			RouletteReturnToGame ();
 		}
 
 		if (!Globals.DemoMode)
@@ -174,6 +197,11 @@ public class BonusSettings : MonoBehaviour {
 		Globals.IsJackpot = false;
 	}
 
+	void RouletteReturnToGame() {
+		for (int k = 0; k < buttons.Length; k++) {
+			buttons [k].gameObject.GetComponent<Roulette> ().reset ();
+		}
+	}
 
 	void MultipleReturnToGame() {
 		pt = 0;
@@ -206,6 +234,17 @@ public class BonusSettings : MonoBehaviour {
 				StartCoroutine (WaitAndExecute (1f, DemoPlay));
 			}
 		}
+		else if (BonusBase.Instance.currentIndex == 2) {
+			buttons [tmp].GetComponent<Roulette> ().startRoll ();
+			StartCoroutine (
+				WaitAndExecute (
+					1f,
+					delegate {
+						buttons [tmp].GetComponent<Roulette> ().startRoll ();
+					}
+				)
+			);
+		}
 	}
 
 	void AutoPlay() {
@@ -219,6 +258,16 @@ public class BonusSettings : MonoBehaviour {
 			if (selection < pt + 1 && Globals.autoPlay) {
 				StartCoroutine (WaitAndExecute (1f, AutoPlay));
 			}
+		} else if (BonusBase.Instance.currentIndex == 2) {
+			buttons [tmp].GetComponent<Roulette> ().startRoll ();
+			StartCoroutine (
+				WaitAndExecute (
+					1f,
+					delegate {
+						buttons [tmp].GetComponent<Roulette> ().startRoll ();
+					}
+				)
+			);
 		}
 	}
 

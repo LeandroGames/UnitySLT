@@ -8,8 +8,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+
 
 public class Jackpot : GenericSingleton<Jackpot> {
 
@@ -18,9 +20,10 @@ public class Jackpot : GenericSingleton<Jackpot> {
 	public float jackpot_initial;
 	public float jackpot_limit;
 	public float percentageIncrease = 0.01f;
-	public float jackpot_current { get { return _Jackpot; } 
+	public float jackpot_current { get { return _Jackpot; } }
+	public GameObject PayWindow;
 	
-	}
+
 
 	public void Start() {
 		JackpotText = GameObject.FindWithTag ("Jackpot").GetComponent<Text>();
@@ -34,6 +37,24 @@ public class Jackpot : GenericSingleton<Jackpot> {
 		}
 		JackpotText.text = MonetaryString (_Jackpot);
 		DisplayJackpot ();
+
+	}
+
+	public void payJackpot() {
+		StartCoroutine (WaitAndExecute (3f, returnGame));
+		PayWindow.SetActive (true);
+	}
+
+
+	void returnGame() {
+		Globals.IsJackpot = false;
+		PayWindow.SetActive (false);
+		if (!Globals.DemoMode) {
+			int tmp = (int)(jackpot_current * Globals.CreditValue);
+			Globals.Gain = (float)tmp;
+		}
+		Slots.Instance._stage = Globals.CHECKPRIZE;
+		Jackpot.Instance.resetJackpot ();
 	}
 
 	public string MonetaryString(float jackp) {
@@ -70,6 +91,12 @@ public class Jackpot : GenericSingleton<Jackpot> {
 			_Jackpot = (float)bf.Deserialize(file);
 			file.Close();
 		}
+	}
+
+	private IEnumerator WaitAndExecute(float waitTime, UnityAction task)
+	{
+		yield return new WaitForSeconds(waitTime);
+		task.Invoke ();
 	}
 
 

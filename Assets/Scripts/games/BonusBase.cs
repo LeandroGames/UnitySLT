@@ -27,13 +27,11 @@ public class BonusBase : GenericSingleton<BonusBase> {
 
 	public void InitBonus(int index, float bnsVl) {
 		bonusIndex = index;
-		Debug.Log ("Bonus start " + bonusIndex);
 		maxValue = bnsVl;
 		StartCoroutine(WaitAndExecute (DelayStart,OnStart));
 	}
 
 	public void OnStart() {
-		Debug.Log ("Start Bonus " + bonusIndex);
 		CallOnStart [bonusIndex].Invoke ();
 		Settings [bonusIndex].GetComponent<BonusSettings> ().Init ();
 	}

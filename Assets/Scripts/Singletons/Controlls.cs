@@ -91,7 +91,11 @@ public class Controlls : GenericSingleton<Controlls> {
 	}
 
 	public void Sortition() {
-		if (Slots.Instance.Stage == Globals.FREETOPLAY && !Globals.DemoMode && Globals.Credit >= Globals.inLine * Globals.Bet) {
+
+		if (Globals.DemoMode || Globals.IsBonus || Globals.IsJackpot)
+			return;
+
+		if (Slots.Instance.Stage == Globals.FREETOPLAY && Globals.Credit >= Globals.inLine * Globals.Bet) {
 			Globals._SoundCtrl.clearQueue ();
 			Globals._SoundCtrl.PlaySoundName ("rolling", false, Globals._SoundCtrl._SlotsSound);
 		}
@@ -99,7 +103,10 @@ public class Controlls : GenericSingleton<Controlls> {
 	}
 
 	public void LineUp() {
-		if (!Globals.DemoMode || Slots.Instance.Stage == Globals.FREETOPLAY) {
+		if (Globals.DemoMode || Globals.IsBonus || Globals.IsJackpot)
+			return;
+		
+		if (Slots.Instance.Stage == Globals.FREETOPLAY) {
 			Globals.markLineReset ();
 			Globals._SoundCtrl.PlaySoundName (Globals._SoundCtrl.SND_LINEMORE,false, Globals._SoundCtrl._AudioSrc);
 			Globals.visualLine (1);
@@ -109,7 +116,11 @@ public class Controlls : GenericSingleton<Controlls> {
 	}
 
 	public void LineDown() {
-		if (!Globals.DemoMode || Slots.Instance.Stage == Globals.FREETOPLAY) {
+
+		if (Globals.DemoMode || Globals.IsBonus || Globals.IsJackpot)
+			return;
+		
+		if (Slots.Instance.Stage == Globals.FREETOPLAY) {
 			Globals.markLineReset ();
 			Globals._SoundCtrl.PlaySoundName (Globals._SoundCtrl.SND_LINELESS,false, Globals._SoundCtrl._AudioSrc);
 			Globals.visualLine (-1);
@@ -119,7 +130,11 @@ public class Controlls : GenericSingleton<Controlls> {
 	}
 
 	public void BetUp() {
-		if (!Globals.DemoMode || Slots.Instance.Stage == Globals.FREETOPLAY) {
+		
+		if (Globals.DemoMode || Globals.IsBonus || Globals.IsJackpot)
+			return;
+		
+		if (Slots.Instance.Stage == Globals.FREETOPLAY) {
 			Globals.markLineReset ();
 			Globals.setBet (1);
 			Globals._SoundCtrl.PlaySoundName (Globals._SoundCtrl.SND_BETMORE,false, Globals._SoundCtrl._AudioSrc);
@@ -128,7 +143,11 @@ public class Controlls : GenericSingleton<Controlls> {
 	}
 
 	public void BetDown() {
-		if (!Globals.DemoMode || Slots.Instance.Stage == Globals.FREETOPLAY) {
+
+		if (Globals.DemoMode || Globals.IsBonus || Globals.IsJackpot)
+			return;
+		
+		if (Slots.Instance.Stage == Globals.FREETOPLAY) {
 			Globals.setBet (-1);
 			Globals._SoundCtrl.PlaySoundName (Globals._SoundCtrl.SND_BETLESS,false, Globals._SoundCtrl._AudioSrc);
 			SaveLoad.AddData ("Bet", Globals.Bet.ToString ());
@@ -160,6 +179,11 @@ public class Controlls : GenericSingleton<Controlls> {
 
 	public void setAutoPlay()
 	{
+		if (Globals.DemoMode) {
+			Globals.autoPlay = false;
+			return;
+		}
+
 		Globals.autoPlay = !Globals.autoPlay;
 		if (Globals.IsBonus) {
 			BonusBase.Instance.Settings [BonusBase.Instance.currentIndex].GetComponent<BonusSettings> ().CallAutoPlayDelay ();

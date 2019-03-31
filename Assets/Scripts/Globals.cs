@@ -292,6 +292,7 @@ public static class Globals  {
 								_isJackpot = true;
 								reward (0, 4, L , p, "AAAAA"); 
 								Debug.Log("ACUMULADO");
+								Jackpot.Instance.payJackpot ();
 							}
 						} else if (Prizes [p].sequence (t) == "BBBBB") {
 							if (pline [0] == p && pline [1] == p &&
@@ -299,7 +300,8 @@ public static class Globals  {
 								_isBonus = true;
 								reward (0, 4, L , p, "BBBBB"); 
 								Debug.Log("BONUS 1");
-								BonusBase.Instance.InitBonus (2, Random.Range (0, 23));
+								float[] bv = new float[5] { 200, 400, 600, 800, 1000 };
+								BonusBase.Instance.InitBonus (2, bv[Random.Range (0,4)]);
 							}
 						} else if (Prizes [p].sequence (t) == "0BBBB" && !_isBonus) {
 							if (Lines [L].L_or_R == "R") {
@@ -308,7 +310,8 @@ public static class Globals  {
 									_isBonus = true;
 									reward (0, 3, L , p, "0BBBB"); 
 									Debug.Log("BONUS 2");
-									BonusBase.Instance.InitBonus (1, Random.Range (100, 500));
+									float[] bv = new float[5] { 100, 200, 300, 400, 500 };
+									BonusBase.Instance.InitBonus (1, bv[Random.Range (0,4)]);
 								}
 							} else {
 								if (pline [1] == p && pline [2] == p &&
@@ -316,7 +319,8 @@ public static class Globals  {
 									_isBonus = true;
 									reward (1, 4, L , p, "0BBBB"); 
 									Debug.Log("BONUS 2");
-									BonusBase.Instance.InitBonus (1, Random.Range (100, 500));
+									float[] bv = new float[5] { 100, 200, 300, 400, 500 };
+									BonusBase.Instance.InitBonus (1, bv[Random.Range (0,4)]);
 								}
 							}
 						} else if (Prizes [p].sequence (t) == "00BBB" && !_isBonus) {
@@ -326,7 +330,8 @@ public static class Globals  {
 									_isBonus = true;
 									reward (0, 2, L , p, "00BBB"); 
 									Debug.Log("BONUS 3");
-									BonusBase.Instance.InitBonus (0, Random.Range (50, 300));
+									float[] bv = new float[5] { 50, 100, 150, 200, 250 };
+									BonusBase.Instance.InitBonus (0, bv[Random.Range (0,4)]);
 								}
 							} else {
 								if (pline [2] == p && pline [3] == p &&
@@ -334,13 +339,14 @@ public static class Globals  {
 									_isBonus = true;
 									reward (2, 4, L , p, "00BBB"); 
 									Debug.Log("BONUS 3");
-									BonusBase.Instance.InitBonus (0, Random.Range (50, 300));
+									float[] bv = new float[5] { 50, 100, 150, 200, 250 };
+									BonusBase.Instance.InitBonus (0, bv[Random.Range (0,4)]);
 								}
 							}
 						} else if (Prizes [p].sequence (t) == "11111") {
 							if (pline [0] == p && pline [1] == p &&
 							   pline [2] == p && pline [3] == p && pline [4] == p) {
-								reward (0, 5, L , p, "11111"); 
+								reward (0, 4, L , p, "11111"); 
 							}
 						} else if (Prizes [p].sequence (t) == "01111") {
 							if (Lines [L].L_or_R == "R") {
